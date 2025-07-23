@@ -21,7 +21,6 @@ dist/
 Thumbs.db
 
 # Ignore npm/yarn/pnpm lock files (optional)
-package-lock.json
 yarn.lock
 pnpm-lock.yaml
 
