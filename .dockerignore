@@ -1,0 +1,59 @@
+# Ignore node_modules, as they will be reinstalled inside the container
+node_modules/
+
+# Ignore local environment variables and other sensitive files
+.env
+.env.*
+
+# Ignore temporary files and caches
+.tmp/
+.cache/
+
+# Ignore build output directories (especially if you're building locally)
+build/
+dist/
+
+# Ignore TypeScript build artifacts
+*.tsbuildinfo
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore npm/yarn/pnpm lock files (optional)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Ignore test folders
+__tests__/
+test/
+tests/
+
+# Ignore Git-related files (not needed in the final image)
+.git/
+.gitignore
+.gitattributes
+
+# Ignore editor/IDE specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore log files
+*.log
+logs/
+
+# Ignore test-related files if they're not needed for production runtime
+coverage/
+*.test.js
+*.spec.js
+
+# Ignore any local development database files (e.g., if you used SQLite initially)
+data/
+database.sqlite*
+
+# Ignore Docker files if not needed in image (optional)
+docker-compose*
+Dockerfile*
